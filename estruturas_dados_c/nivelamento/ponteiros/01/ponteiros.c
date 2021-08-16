@@ -24,7 +24,20 @@ int main()
         int i = 0;
         pi = &i;
     }
+
     *pi = 100;
 
     return 0;
+}
+
+void calcular_media()
+{
+    int numero_mult, aux, result;
+    printf("Digite numero mult, aux");
+    scanf("%d", &numero_mult);
+    printf("Digite numero aux");
+    scanf("%d", &aux);
+    for (int i = 0; i <= 10; i++)
+    {
+    }
 }

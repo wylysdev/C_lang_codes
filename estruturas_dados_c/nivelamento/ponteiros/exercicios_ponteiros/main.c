@@ -193,9 +193,69 @@ void exe05()
     return;
 }
 
+void exe06()
+{
+
+    /*
+        Crie um programa que contenha uma matriz de float contendo 3 linhas e 3 colunas.
+        Imprima o enderec¸o de cada posic¸ao dessa matriz.
+    */
+
+    float array[3][3] = {
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+    };
+
+    spaceView1();
+    printf("imprimindo enderecos\n");
+    for (int i = 0; i < 3; i++) //linha
+    {
+        for (int j = 0; j < 3; j++) // coluna
+        {
+            printf("%p ", &array[i][j]);
+        }
+        spaceView1();
+    }
+
+    spaceView1();
+
+    printf("imprimindo valores\n");
+    for (int i = 0; i < 3; i++) //linha
+    {
+        for (int j = 0; j < 3; j++) // coluna
+        {
+            printf("%f ", array[i][j]);
+        }
+        spaceView1();
+    }
+
+    spaceView1();
+    return;
+}
+
+void exe07()
+{
+    /*
+        Crie um programa que contenha um array de inteiros contendo 5 elementos. Utilizando
+        apenas aritmetica de ponteiros, leia esse array do teclado e imprima o dobro de cada ´
+        valor lido
+    */
+
+   
+    return;
+}
+
 int main()
 {
     //exe04();
-    exe05();
+    //exe05();
+    exe06();
     return 0;
 }
