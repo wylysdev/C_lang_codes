@@ -25,12 +25,13 @@ q_insert(queue_t *q, int item)
     q->items[q->rear] = item;
 }
 
-int q_remove(queue_t *q) {
-    int aux ;
-
+int q_remove(queue_t *q)
+{
+    int aux;
 }
 
-bool q_is_empty(queue_t *q){
+bool q_is_empty(queue_t *q)
+{
     return (q->rear) < (q->front);
 }
 
